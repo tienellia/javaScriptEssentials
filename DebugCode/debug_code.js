@@ -5,7 +5,7 @@ function performOperation() {
     // Check if inputs are valid numbers
     if (!isNaN(num1) && !isNaN(num2)) {
     // Perform the operation
-                    let result = multiply(num1, num2);
+                    let result = ((num1 * num2) + (num1 + num2)) / num1;
                     // Display the result
                     displayResult(result);
                 } else {
@@ -17,7 +17,12 @@ function performOperation() {
                 debugger;
                 // Multiply the numbers
                 return a * b;
+                //Add the numbers
+                return a + b
+                //Divide the numbers
+                return a / b
             }
+           
             function displayResult(result) {
                 // Display the result in the paragraph element
                 const resultElement = document.getElementById('result');
